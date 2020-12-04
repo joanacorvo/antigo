@@ -1,1 +1,478 @@
+html {
+    scroll-behavior: smooth;
+}
 
+:root {
+    --blue: #557585;
+}
+
+*,
+*:focus,
+*:hover {
+    outline: none;
+}
+
+body {
+    background-color: var(--blue);
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    width: 100vw;
+}
+
+header {
+    width: 100vw;
+    height: 62px;
+    position: fixed;
+    background-color: var(--blue);
+    display: inline-block;
+    color: white;
+    top: 0;
+    z-index: 2;
+}
+
+
+.nome {
+    font-family: 'Avara_Bold', serif;
+    font-size: 20px;
+    width: 124px;
+    margin-left: 24px;
+    color: white;
+    z-index: 4;
+}
+
+.nome a:link,
+.nome a:visited {
+    color: white;
+}
+
+.nome a:hover,
+.nome a:active {
+    color: black;
+}
+
+
+nav {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    top: 14px;
+    z-index: 3;
+}
+
+#menuToggle {
+    display: none;
+}
+
+.menu-btn {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 8px 14px 10px 14px;
+    border: solid white 1px;
+    right: 24px;
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.menu-btn:active {
+    background-color: white;
+    color: var(--blue);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+nav ul {
+    margin: 48px 0 0 0;
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    -webkit-transition: max-height 0.3s;
+    -moz-transition: max-height 0.3s;
+    -ms-transition: max-height 0.3s;
+    -o-transition: max-height 0.3s;
+    transition: max-height 0.3s;
+}
+
+nav ul a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 48px;
+    background-color: var(--blue);
+    color: white;
+    border: white solid 1px;
+    font-size: 16px;
+    padding: 16px 0;
+    box-sizing: border-box;
+}
+
+
+#menuToggle:checked~ul {
+    max-height: 350px;
+}
+
+main {
+    width: 100vw;
+}
+
+
+h1 {
+    font-family: 'Avara_Bold', serif;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+figcaption {
+    font-size: 10px;
+    line-height: 14px;
+    width: 100%;
+    margin: 0;
+    text-align: right;
+}
+
+.intro {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    margin: auto 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.container p {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 300;
+    max-width: 400px;
+}
+
+.button {
+    width: 124px;
+    height: 48px;
+    background-color: #55758500;
+    border: solid white 3px;
+    font-family: 'Avara_Black', serif;
+    font-size: 14px;
+    padding: 0;
+    margin-top: 20px;
+    display: block;
+    color: black;
+}
+
+.button p {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    padding: 11.2px 0;
+}
+
+.button:active {
+    background-color: white;
+}
+
+
+.cloud_sec {
+    position: absolute;
+    margin: 0 auto;
+    bottom: -64px;
+    width: 98%;
+}
+
+.cloud_sec2, .cloud_sec3 {
+    display: none;
+}
+
+.comp {
+    width: 100%;
+    background-color: white;
+    padding: 48px 16px;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+figure p {
+    font-size: 10px;
+    line-height: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+.icons_comp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icons_comp figure {
+    width: 30%;
+    padding-bottom: 30%;
+    box-sizing: border-box;
+    /* border: solid var(--blue) 1px; */
+    background-color: var(--blue);
+    margin: 2px;
+    position: relative;
+}
+
+
+.icons_comp figure p {
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+
+.icons_comp_img {
+    position: absolute;
+    width: 60%;
+    margin: auto;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+.cards_comp figure {
+    width: 100%;
+    border: solid var(--blue) 1px;
+    margin: 16px 0;
+}
+
+.quali {
+    width: 100vw;
+    color: white;
+    padding: 48px 16px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.logo_fac {
+    width: 70%;
+    margin: 24px auto;
+
+}
+
+.logo_fac img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.logo_beja {
+    width: 40%;
+    margin: 24px auto;
+}
+
+.logo_beja img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.quali div {
+    margin: 48px auto;
+    max-width: 450px;
+
+}
+
+.quali div p {
+    margin: 0;
+}
+
+
+.cloud_qua {
+    position: absolute;
+    left: 0;
+    bottom: -94px;
+    width: 80%;
+    max-width: 260px;
+}
+
+.cloud_sec4, .cloud_sec5 {
+    display: none;
+}
+
+.port {
+    width: 100%;
+    background-color: white;
+    padding: 48px 0px 48px 16px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+
+.port-container {
+    display: flex;
+    overflow: auto;
+}
+
+
+
+.port-container article {
+    margin-right: 16px;
+}
+
+.port-container .mustwe {
+    padding-right: 16px;
+}
+
+.port-container article p {
+    width: 80vw;
+}
+
+
+
+.image-wrapper {
+    margin: 0;
+    position: relative;
+    padding-bottom: 56.25%;
+    box-sizing: border-box;
+}
+
+.image-wrapper img,
+.image-wrapper iframe {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.figc_port {
+    position: absolute;
+    bottom: -16px;
+}
+
+
+
+
+
+.about {
+    width: 100vw;
+    color: white;
+    padding: 48px 16px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+
+.cloud_about {
+    position: absolute;
+    right: 0;
+    top: -74px;
+    width: 70%;
+    max-width: 280px;
+    z-index: -1;
+}
+
+.about figure {
+    width: 100%;
+    margin: 24px auto;
+}
+
+.about figure img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.contact {
+    width: 100vw;
+    color: white;
+    padding: 48px 16px 180px 16px;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #557585 35.42%, #CE6646 80.21%, #1F3171 97.92%, #02050F 100%);
+    position: relative;
+}
+
+.corvo {
+    width: 60%;
+    max-width: 272px;
+    float: right;
+    margin-right: 0;
+    margin-left: 44px;
+    margin-bottom: 64px;
+}
+
+.corvo img {
+    width: 100%;
+    max-width: 272px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.contact h1,
+.contact p,
+.contact button {
+    clear: both;
+}
+
+.contact p {
+    max-width: 412px;
+}
+
+.contact button {
+    margin-bottom: 200px;
+}
+
+.city {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 152px;
+    object-fit: cover;
+    left: 0;
+    bottom: 0;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 48px 16px;
+    box-sizing: border-box;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 4px;
+}
+
+footer a {
+    width: 12px;
+    height: 12px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
