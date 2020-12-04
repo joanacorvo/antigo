@@ -16,11 +16,11 @@ body {
     background-color: var(--blue);
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    width: 100vw;
+    width: 100%;
 }
 
 header {
-    width: 100vw;
+    width: 100%;
     height: 62px;
     position: fixed;
     background-color: var(--blue);
@@ -121,7 +121,7 @@ nav ul a {
 }
 
 main {
-    width: 100vw;
+    width: 100%;
 }
 
 
@@ -145,7 +145,7 @@ figcaption {
 }
 
 .intro {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: relative;
 }
@@ -181,9 +181,10 @@ figcaption {
 .button p {
     width: 100%;
     font-size: 14px;
+    line-height: 14px;
     text-align: center;
     margin: 0;
-    padding: 11.2px 0;
+    padding: 17px 0;
 }
 
 .button:active {
@@ -194,8 +195,10 @@ figcaption {
 .cloud_sec {
     position: absolute;
     margin: 0 auto;
+    right: 0;
     bottom: -64px;
-    width: 98%;
+    max-width: 508px;
+    /* width: 100%; */
 }
 
 .cloud_sec2, .cloud_sec3 {
@@ -260,8 +263,29 @@ figure p {
     margin: 16px 0;
 }
 
+.tec-soft_comp {
+    margin-top: 48px;
+}
+
+.list_comp {
+    margin-top: 24px;
+}
+
+.list_comp li {
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.list_comp li::before {
+    content: '\25BA';
+    color: var(--blue);
+    display: inline-block;
+    margin-left: -16px;
+}
+
+
 .quali {
-    width: 100vw;
+    width: 100%;
     color: white;
     padding: 48px 16px;
     box-sizing: border-box;
@@ -370,7 +394,7 @@ figure p {
 
 
 .about {
-    width: 100vw;
+    width: 100%;
     color: white;
     padding: 48px 16px;
     box-sizing: border-box;
@@ -391,17 +415,21 @@ figure p {
 .about figure {
     width: 100%;
     margin: 24px auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: white solid 1px;
 }
 
 .about figure img {
-    width: 100%;
+    width: 50%;
     object-fit: cover;
-    display: block;
+    border: white solid 2px;
+    box-sizing: border-box;
 }
 
 
 .contact {
-    width: 100vw;
+    width: 100%;
     color: white;
     padding: 48px 16px 180px 16px;
     box-sizing: border-box;
@@ -456,7 +484,7 @@ footer {
     color: white;
     padding: 48px 16px;
     box-sizing: border-box;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -470,9 +498,27 @@ footer p {
     margin: 4px;
 }
 
-footer a {
+.linkedin_footer {
     width: 12px;
     height: 12px;
     margin-top: 8px;
     margin-bottom: 16px;
+}
+
+.email_footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.email_footer a:link, .email_footer a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+@media (min-width:600px) {
+    body{
+        background-color: yellowgreen;
+    }
 }
