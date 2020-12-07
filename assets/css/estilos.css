@@ -32,10 +32,7 @@ header {
 
 
 .nome {
-    font-family: 'Avara_Bold', serif;
-    font-size: 20px;
-    width: 124px;
-    margin-left: 24px;
+    margin: 24px;
     color: white;
     z-index: 4;
 }
@@ -127,11 +124,18 @@ main {
 
 h1 {
     font-family: 'Avara_Bold', serif;
+    font-size: 20px;
+    line-height: 20px;
+    width: 124px;
+}
+
+h2 {
+    font-family: 'Avara_Bold', serif;
     font-size: 32px;
     line-height: 40px;
 }
 
-h2 {
+h3 {
     font-size: 20px;
     line-height: 24px;
 }
@@ -156,40 +160,48 @@ figcaption {
     top: 50%;
     transform: translateY(-50%);
     color: white;
+    max-width: 400px;
 }
 
 .container p {
     font-size: 20px;
     line-height: 26px;
     font-weight: 300;
-    max-width: 400px;
 }
 
 .button {
-    width: 124px;
-    height: 48px;
     background-color: #55758500;
     border: solid white 3px;
     font-family: 'Avara_Black', serif;
     font-size: 14px;
-    padding: 0;
+    padding: 17px 32px;
     margin-top: 20px;
-    display: block;
+    display: inline-block;
     color: black;
+    transition: 0.6s;
 }
 
 .button p {
-    width: 100%;
     font-size: 14px;
     line-height: 14px;
     text-align: center;
     margin: 0;
-    padding: 17px 0;
+    display: inline-block;
 }
 
-.button:active {
+.button:hover,
+.button:active, .button:focus {
     background-color: white;
 }
+
+.button:active, .button:focus {
+    color: var(--blue);
+}
+
+.button:hover::after {
+    content: '\2709';
+}
+
 
 
 .cloud_sec {
@@ -201,7 +213,15 @@ figcaption {
     /* width: 100%; */
 }
 
-.cloud_sec2, .cloud_sec3 {
+.cloud_sec2 {
+    position: absolute;
+    width: 30%;
+    right: 18%;
+    top: 80px;
+    max-width: 256px;
+}
+
+.cloud_sec3 {
     display: none;
 }
 
@@ -295,7 +315,7 @@ figure p {
 .logo_fac {
     width: 70%;
     margin: 24px auto;
-
+    max-width: 240px;
 }
 
 .logo_fac img {
@@ -307,6 +327,7 @@ figure p {
 .logo_beja {
     width: 40%;
     margin: 24px auto;
+    max-width: 112px;
 }
 
 .logo_beja img {
@@ -316,14 +337,15 @@ figure p {
 }
 
 
-.quali div {
+.quali_individual {
     margin: 48px auto;
     max-width: 450px;
 
 }
 
-.quali div p {
+.quali_individual p {
     margin: 0;
+    text-align: center;
 }
 
 
@@ -333,16 +355,18 @@ figure p {
     bottom: -94px;
     width: 80%;
     max-width: 260px;
+    z-index: -1;
 }
 
-.cloud_sec4, .cloud_sec5 {
+.cloud_sec4,
+.cloud_sec5 {
     display: none;
 }
 
 .port {
     width: 100%;
     background-color: white;
-    padding: 48px 0px 48px 16px;
+    padding: 48px 16px;
     box-sizing: border-box;
     height: 100%;
 }
@@ -357,6 +381,7 @@ figure p {
 
 .port-container article {
     margin-right: 16px;
+    max-width: 480px;
 }
 
 .port-container .mustwe {
@@ -365,6 +390,7 @@ figure p {
 
 .port-container article p {
     width: 80vw;
+    max-width: 480px;
 }
 
 
@@ -399,9 +425,21 @@ figure p {
     padding: 48px 16px;
     box-sizing: border-box;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
+.about h2 {
+    order: 1;
+}
 
+.p1_about {
+    order: 2;
+}
+
+.p2_about {
+    order: 4;
+}
 
 .cloud_about {
     position: absolute;
@@ -412,15 +450,16 @@ figure p {
     z-index: -1;
 }
 
-.about figure {
+.fotos_joana {
     width: 100%;
     margin: 24px auto;
     display: flex;
     flex-wrap: wrap;
     border: white solid 1px;
+    order: 3;
 }
 
-.about figure img {
+.fotos_joana img {
     width: 50%;
     object-fit: cover;
     border: white solid 2px;
@@ -510,7 +549,8 @@ footer p {
     color: white;
 }
 
-.email_footer a:link, .email_footer a:visited {
+.email_footer a:link,
+.email_footer a:visited {
     text-decoration: none;
     color: white;
 }
@@ -518,7 +558,226 @@ footer p {
 
 
 @media (min-width:600px) {
-    body{
+    /* body {
         background-color: yellowgreen;
+    } */
+
+    .container {
+        margin: auto 44px;
+    }
+
+    .comp,
+    .quali,
+    .port,
+    .about {
+        padding: 48px 44px;
+    }
+
+    p {
+        max-width: 558px;
+    }
+
+    .icons_comp figure {
+        width: 24%;
+        padding-bottom: 24%;
+    }
+
+    .port-container article {
+        margin-right: 44px;
+    }
+
+    .fotos_joana {
+        max-width: 480px;
+    }
+
+    .contact {
+        padding: 48px 44px 180px 44px;
+    }
+
+    .contact h1,
+    .contact p,
+    .contact button {
+        clear: none;
+    }
+}
+
+
+
+
+
+@media (min-width:924px) {
+   /*  body {
+        background-color: rgb(205, 50, 146);
+    } */
+
+    .menu-btn {
+        display: none;
+    }
+
+    nav {
+        height: 100%;
+        top: 0;
+    }
+
+    nav ul {
+        margin: auto 8px;
+        display: flex;
+        flex-direction: row;
+        max-height: none;
+        float: right;
+        height: 100%;
+    }
+
+    nav ul a {
+        height: fit-content;
+        display: inline-block;
+        border: none;
+        background-color: transparent;
+        width: auto;
+        padding: 0;
+        margin: auto 16px;
+    }
+
+    nav ul a:link, nav ul a:visited {
+        color: white;
+        text-decoration: none;
+    }
+
+    nav ul a:hover {
+        color: black;
+        text-decoration: none;
+    }
+
+    nav ul a:active, nav ul a:focus {
+        color: gray;
+        text-decoration: none;
+    }
+
+    .container {
+        margin: auto 88px;
+    }
+
+    .cloud_sec3 {
+        display: block;
+        position: absolute;
+        width: 200px;
+        left: 3%;
+        bottom: 5%;
+        z-index: -1;
+    }
+
+    .comp,
+    .quali,
+    .port,
+    .about {
+        padding: 78px 88px;
+    }
+
+    .icons_comp {
+        margin-top: 48px;
+    }
+
+    .icons_comp figure {
+        width: 19%;
+        padding-bottom: 19%;
+    }
+
+    .quali-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .quali_individual {
+        width: 49%;
+        display: inline-block;
+        margin: 24px auto;
+    }
+
+    .cloud_sec5 {
+        display: block;
+        position: absolute;
+        width: 320px;
+        right: 3%;
+        top: 5%;
+    }
+  
+    .port-container {
+        overflow: unset;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .port-container article {
+        width: 46%;
+        margin-right: 0;
+        margin-bottom: 78px;
+    }
+
+    h3 {
+        margin-top: 38px;
+    }
+
+    .port-container article p {
+        width: 100%;
+    }
+
+    .about {
+        display: block;
+        overflow: hidden;
+    }
+
+    .p1_about, .p2_about {
+        float: right;
+        width: 60%;
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+
+    .fotos_joana {
+        margin: 0;
+        width: 35%;
+        float: left;
+    }
+
+    .contact {
+        padding: 98px 88px 280px 88px;
+    }
+   
+}
+
+
+
+
+
+
+
+@media (min-width:1200px) {
+  /*   body {
+        background-color: darkgoldenrod;
+    } */
+
+    .nome {
+        margin-left: 88px;
+    }
+
+
+    nav ul {
+        margin-right: 72px;
+    }
+
+    .container {
+        margin: auto 240px;
+    }
+
+    .comp,
+    .quali,
+    .port,
+    .about {
+        padding: 98px 240px;
+    }
+
+    .contact {
+        padding: 98px 240px 280px 240px;
     }
 }
