@@ -131,6 +131,11 @@ h3 {
     line-height: 1.5rem;
 }
 
+p {
+    font-size: 1rem;
+    line-height: 1.375rem;
+}
+
 figcaption {
     font-size: 0.625rem;
     line-height: 0.875rem;
@@ -195,15 +200,12 @@ figcaption {
     content: '\2709';
 }
 
-
-
 .cloud_sec {
     position: absolute;
     margin: 0 auto;
     right: 0;
     bottom: -64px;
     max-width: 508px;
-    /* width: 100%; */
 }
 
 .cloud_sec2 {
@@ -225,11 +227,6 @@ figcaption {
     box-sizing: border-box;
 }
 
-p {
-    font-size: 1rem;
-    line-height: 1.375rem;
-}
-
 figure p {
     font-size: 0.625rem;
     line-height: 0.875rem;
@@ -248,12 +245,10 @@ figure p {
     width: 30%;
     padding-bottom: 30%;
     box-sizing: border-box;
-    /* border: solid var(--blue) 1px; */
     background-color: var(--blue);
     margin: 2px;
     position: relative;
 }
-
 
 .icons_comp figure p {
     position: absolute;
@@ -296,7 +291,6 @@ figure p {
     margin-left: -16px;
 }
 
-
 .quali {
     width: 100%;
     color: white;
@@ -329,7 +323,6 @@ figure p {
     display: block;
 }
 
-
 .quali_individual {
     margin: 48px auto;
     max-width: 450px;
@@ -340,7 +333,6 @@ figure p {
     margin: 0;
     text-align: center;
 }
-
 
 .cloud_qua {
     position: absolute;
@@ -364,13 +356,10 @@ figure p {
     height: 100%;
 }
 
-
 .port-container {
     display: flex;
     overflow: auto;
 }
-
-
 
 .port-container article {
     margin-right: 16px;
@@ -433,9 +422,6 @@ figure p {
     bottom: -16px;
 }
 
-
-
-
 .about {
     width: 100%;
     color: white;
@@ -483,7 +469,6 @@ figure p {
     border: white solid 2px;
     box-sizing: border-box;
 }
-
 
 .contact {
     width: 100%;
@@ -535,7 +520,6 @@ figure p {
     bottom: 0;
 }
 
-
 footer {
     background-color: black;
     color: white;
@@ -572,8 +556,6 @@ footer p {
     text-decoration: none;
     color: white;
 }
-
-
 
 @media (min-width:600px) {
     .container {
@@ -614,10 +596,6 @@ footer p {
         clear: none;
     }
 }
-
-
-
-
 
 @media (min-width:924px) {
     .menu-btn {
@@ -769,17 +747,10 @@ footer p {
     }
 }
 
-
-
-
-
-
-
 @media (min-width:1200px) {
     .nome {
         margin-left: 88px;
     }
-
 
     nav ul {
         margin-right: 72px;
