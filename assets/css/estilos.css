@@ -676,6 +676,10 @@ footer p {
         padding-bottom: 19%;
     }
 
+    .icons_comp figure p {
+        font-size: 0.75rem;
+    }
+
     .quali-container {
         display: flex;
         flex-wrap: wrap;
