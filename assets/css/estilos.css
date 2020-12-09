@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 :root {
@@ -37,16 +38,6 @@ header {
     z-index: 4;
 }
 
-.nome a:link,
-.nome a:visited {
-    color: white;
-}
-
-.nome a:hover,
-.nome a:active {
-    color: black;
-}
-
 
 nav {
     position: absolute;
@@ -62,8 +53,8 @@ nav {
 }
 
 .menu-btn {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
     padding: 8px 14px 10px 14px;
     border: solid white 1px;
     right: 24px;
@@ -107,7 +98,7 @@ nav ul a {
     background-color: var(--blue);
     color: white;
     border: white solid 1px;
-    font-size: 16px;
+    font-size: 1rem;
     padding: 16px 0;
     box-sizing: border-box;
 }
@@ -124,25 +115,25 @@ main {
 
 h1 {
     font-family: 'Avara_Bold', serif;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
     width: 124px;
 }
 
 h2 {
     font-family: 'Avara_Bold', serif;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 2rem;
+    line-height: 2.5rem;
 }
 
 h3 {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
 }
 
 figcaption {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: 0.625rem;
+    line-height: 0.875rem;
     width: 100%;
     margin: 0;
     text-align: right;
@@ -164,8 +155,8 @@ figcaption {
 }
 
 .container p {
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
     font-weight: 300;
 }
 
@@ -173,7 +164,7 @@ figcaption {
     background-color: #55758500;
     border: solid white 3px;
     font-family: 'Avara_Black', serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     padding: 17px 32px;
     margin-top: 20px;
     display: inline-block;
@@ -182,19 +173,21 @@ figcaption {
 }
 
 .button p {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
     text-align: center;
     margin: 0;
     display: inline-block;
 }
 
 .button:hover,
-.button:active, .button:focus {
+.button:active,
+.button:focus {
     background-color: white;
 }
 
-.button:active, .button:focus {
+.button:active,
+.button:focus {
     color: var(--blue);
 }
 
@@ -233,13 +226,13 @@ figcaption {
 }
 
 p {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 1rem;
+    line-height: 1.375rem;
 }
 
 figure p {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: 0.625rem;
+    line-height: 0.875rem;
     width: 100%;
     text-align: center;
 }
@@ -393,7 +386,31 @@ figure p {
     max-width: 480px;
 }
 
+.fx4x_link {
+    color: var(--blue);
+}
 
+.fx4x_link p {
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+}
+
+.fx4x_link:link,
+.fx4x_link:visited {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.fx4x_link:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.fx4x_link:active,
+.fx4x_link:focus {
+    color: gray;
+    text-decoration: none;
+}
 
 .image-wrapper {
     margin: 0;
@@ -408,13 +425,13 @@ figure p {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    border: none;
 }
 
 .figc_port {
     position: absolute;
     bottom: -16px;
 }
-
 
 
 
@@ -457,6 +474,7 @@ figure p {
     flex-wrap: wrap;
     border: white solid 1px;
     order: 3;
+    background-color: white;
 }
 
 .fotos_joana img {
@@ -532,8 +550,8 @@ footer {
 footer p {
     width: 100%;
     text-align: center;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 0.75rem;
+    line-height: 1rem;
     margin: 4px;
 }
 
@@ -558,10 +576,6 @@ footer p {
 
 
 @media (min-width:600px) {
-    /* body {
-        background-color: yellowgreen;
-    } */
-
     .container {
         margin: auto 44px;
     }
@@ -606,10 +620,6 @@ footer p {
 
 
 @media (min-width:924px) {
-   /*  body {
-        background-color: rgb(205, 50, 146);
-    } */
-
     .menu-btn {
         display: none;
     }
@@ -628,27 +638,32 @@ footer p {
         height: 100%;
     }
 
-    nav ul a {
+    nav ul li {
         height: fit-content;
         display: inline-block;
-        border: none;
         background-color: transparent;
         width: auto;
         padding: 0;
         margin: auto 16px;
     }
 
-    nav ul a:link, nav ul a:visited {
+    nav ul li a {
+        border: none;
+    }
+
+    nav ul li a:link,
+    nav ul li a:visited {
         color: white;
         text-decoration: none;
     }
 
-    nav ul a:hover {
+    nav ul li a:hover {
         color: black;
         text-decoration: none;
     }
 
-    nav ul a:active, nav ul a:focus {
+    nav ul li a:active,
+    nav ul li a:focus {
         color: gray;
         text-decoration: none;
     }
@@ -701,13 +716,13 @@ footer p {
         right: 3%;
         top: 5%;
     }
-  
+
     .port-container {
         overflow: unset;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    
+
     .port-container article {
         width: 46%;
         margin-right: 0;
@@ -727,7 +742,8 @@ footer p {
         overflow: hidden;
     }
 
-    .p1_about, .p2_about {
+    .p1_about,
+    .p2_about {
         float: right;
         width: 60%;
         margin-top: 0;
@@ -740,10 +756,17 @@ footer p {
         float: left;
     }
 
+    .cloud_sec4 {
+        display: block;
+        position: absolute;
+        width: 172px;
+        right: 35%;
+        top: 2%;
+    }
+
     .contact {
         padding: 98px 88px 280px 88px;
     }
-   
 }
 
 
@@ -753,10 +776,6 @@ footer p {
 
 
 @media (min-width:1200px) {
-  /*   body {
-        background-color: darkgoldenrod;
-    } */
-
     .nome {
         margin-left: 88px;
     }
