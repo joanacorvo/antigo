@@ -4,7 +4,7 @@ html {
 }
 
 :root {
-    --blue: #557585;
+    --blue: #295C75;
 }
 
 *,
@@ -475,7 +475,7 @@ figure p {
     color: white;
     padding: 48px 16px 180px 16px;
     box-sizing: border-box;
-    background: linear-gradient(180deg, #557585 35.42%, #CE6646 80.21%, #1F3171 97.92%, #02050F 100%);
+    background: linear-gradient(180deg, #295C75 35.42%, #CE6646 80.21%, #1F3171 97.92%, #02050F 100%);
     position: relative;
 }
 
