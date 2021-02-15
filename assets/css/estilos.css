@@ -540,11 +540,11 @@ footer p {
     margin: 4px;
 }
 
-.linkedin_footer {
+.socials {
     width: 12px;
     height: 12px;
-    margin-top: 8px;
-    margin-bottom: 16px;
+
+    margin: 16px 4px 16px 4px;
 }
 
 .email_footer a {
