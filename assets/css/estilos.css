@@ -381,7 +381,7 @@ figure p {
 
 
 .nike {
-    background-image: url("/assets/imagens/nike.png");
+    background-image: url("../imagens/nike.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -392,7 +392,7 @@ figure p {
 }
 
 .brew {
-    background-image: url("/assets/imagens/brew.png");
+    background-image: url("../imagens/brew.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -403,7 +403,7 @@ figure p {
 }
 
 .crew {
-    background-image: url("/assets/imagens/crew.png");
+    background-image: url("../imagens/crew.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
