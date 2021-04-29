@@ -360,11 +360,83 @@ figure p {
 .port-container {
     display: flex;
     overflow: auto;
+    margin-top: 100px;
 }
 
 .port-container article {
     margin-right: 16px;
     max-width: 480px;
+}
+
+.case-btn {
+    width: 100%;
+    margin: 16px 0 16px 0;
+    color: white;
+    display: flex;
+    padding: 24px;
+    box-sizing: border-box;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.nike {
+    background-image: url("/assets/imagens/nike.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.brew {
+    background-image: url("/assets/imagens/brew.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.crew {
+    background-image: url("/assets/imagens/crew.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.overlay {
+    background: linear-gradient(90deg, #295c75 16.98%, rgba(255, 255, 255, 0) 100%);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+a > .case-btn div:hover {
+    background-color: var(--blue);
+}
+
+.case-btn h3 {
+    width: fit-content;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    z-index: 1;
+}
+
+.figc_case {
+    width: fit-content;
+    text-align: left;
+    z-index: 1;
 }
 
 .port-container .mustwe {
@@ -665,6 +737,10 @@ footer p {
     .port,
     .about {
         padding: 78px 88px;
+    }
+
+    .container > p {
+        width: 500px;
     }
 
     .icons_comp {
